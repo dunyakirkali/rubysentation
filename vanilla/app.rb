@@ -1,20 +1,15 @@
 COLORS = {
-  black:   "000",
-  red:     "f00",
-  green:   "0f0",
-  yellow:  "ff0",
-  blue:    "00f",
-  magenta: "f0f",
-  cyan:    "0ff",
-  white:   "fff"
+  red:     "31",
+  green:   "32"
 }
 
 class String
   COLORS.each do |color, code|
-    define_method "in_#{color}" do
-      "<span style=\"color: ##{code}\">#{self}</span>"
+    define_method "#{color}" do
+      "\e[#{code}m#{self}\e[0m"
     end
   end
 end
 
-puts "Hello World".in_red
+puts "Hello World".red
+puts "Hello World".green
