@@ -1,0 +1,12 @@
+PODS:
+  - Emoji-swift (0.1.0)
+
+DEPENDENCIES:
+  - Emoji-swift
+
+SPEC CHECKSUMS:
+  Emoji-swift: 20010383183f4d85e6e5a2b9642b96ebdb4f06ae
+
+PODFILE CHECKSUM: 69c1a0cd51adf561790ef217a6cd0e6ce0587ae5
+
+COCOAPODS: 1.2.1
